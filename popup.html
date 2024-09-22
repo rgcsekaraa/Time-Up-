@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Up?</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main screen (Add/Edit Goal) -->
+    <div class="main-container" id="mainScreen">
+      <header>
+        <img src="./icons/icon.png" alt="Time Up Logo" class="logo" />
+        <h1 id="mainTitle">Add your goal and set a reminder</h1>
+      </header>
+      <div class="content">
+        <input
+          type="text"
+          placeholder="What's your goal?"
+          id="goalInput"
+          class="goal-input"
+        />
+        <div class="date-time-container">
+          <input type="date" id="goalDate" class="date-picker" />
+          <input type="time" id="goalTime" class="time-picker" />
+        </div>
+        <button id="addGoalBtn" class="add-goal-btn">Add Goal</button>
+        <p id="errorMessage" class="error-message"></p>
+      </div>
+      <!-- Footer -->
+      <div class="footer">&copy; 2024 CRG</div>
+    </div>
+
+    <!-- Second screen (Manage Goals) -->
+    <div class="second-container" id="secondScreen" style="display: none">
+      <header>
+        <div class="header-left">
+          <img src="./icons/icon.png" alt="Time Up Logo" class="logo" />
+          <i class="material-icons add-icon" id="addTaskIcon">add_circle</i>
+        </div>
+        <select id="goalDropdown" class="goal-dropdown"></select>
+      </header>
+      <div class="content">
+        <div class="goal-details">
+          <div class="goal-header">
+            <h2 id="selectedGoalHeading" class="goal-heading"></h2>
+            <div class="icon-group">
+              <i class="material-icons edit-icon" id="editGoalBtn">edit</i>
+              <i class="material-icons delete-icon" id="deleteGoalBtn"
+                >delete</i
+              >
+            </div>
+          </div>
+        </div>
+        <div class="counter">
+          <h1 id="timeRemaining" class="time-remaining"></h1>
+          <p id="motivationalMessage" class="motivational-message"></p>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer">&copy; 2024 CRG</div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

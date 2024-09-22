@@ -1,0 +1,168 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #def0fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container #mainTitle {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.main-container,
+.second-container {
+  background-color: #def0fa;
+  width: 380px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(217, 188, 188, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.add-icon {
+  font-size: 36px;
+  color: #00733f;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Footer Styling */
+.footer {
+  margin-top: 20px; /* Fixed top margin to separate from content */
+  padding-top: 10px; /* Fixed top padding for spacing */
+  text-align: center; /* Centered text */
+  font-size: 10px; /* Smaller font size */
+  color: #a0a1a1; /* Grey color for subdued appearance */
+}
+
+h1,
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.goal-input,
+.date-picker,
+.time-picker {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.add-goal-btn,
+.edit-btn,
+.delete-btn {
+  background-color: #00733f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-goal-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+  border-radius: 180px;
+  background-color: #042e18;
+}
+
+.goal-dropdown {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  white-space: nowrap; /* Prevent text from wrapping to a new line */
+  overflow: hidden; /* Hide any text that overflows the container */
+  text-overflow: ellipsis; /* Add ellipsis ("...") for overflowing text */
+  max-width: 150px;
+}
+
+.counter {
+  text-align: center;
+}
+
+.content {
+  max-width: 355px;
+}
+
+.time-remaining {
+  font-size: 44px;
+  color: #ffffff;
+  margin: 40px 0; /* Add large margin to make the counter more prominent */
+  padding: 20px; /* Add padding around the counter */
+  border-radius: 20px; /* Rounded corners for the time counter */
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+}
+
+.motivational-message {
+  font-size: 17px;
+  color: #666;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.goal-header {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add space between the title and buttons */
+}
+
+.goal-heading {
+  margin-top: 20px;
+  font-size: 24px; /* Increase the font size to make the title bigger */
+  white-space: nowrap; /* Prevent text from wrapping to a new line */
+  overflow: hidden; /* Hide any text that overflows the container */
+  text-overflow: ellipsis; /* Add ellipsis ("...") for overflowing text */
+  max-width: 250px; /* Limit the width of the goal title to fit in the available space */
+}
+
+.icon-group {
+  display: flex;
+  gap: 5px; /* Add space between the icons */
+}
+
+.edit-icon,
+.delete-icon {
+  font-size: 24px;
+  color: #00733f;
+  cursor: pointer;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  color: #00bb7d;
+  border-radius: 180px;
+  background-color: #cbe9d9;
+  padding: 5px;
+}
